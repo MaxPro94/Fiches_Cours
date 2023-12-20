@@ -1,0 +1,7 @@
+1- Bien organiser les images du cour1 dans un dossier *Public/assets/img/cour1*
+1.1- Bien specifier de se log a chaque debut de session sur le panneau de commande en utilisant la commande: "git config user.email 'email@email.fr'"
+1.2- Bien remettre les html dans le dossier public ( attention au chemins des assets qui va changer etc..)
+2- Finir le cour2.html
+3- Faire de style.css du cour2.html
+***- Peaufiner le style du site
+***- Bien relire les cours ( fautes etc.. )
