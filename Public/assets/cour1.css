@@ -1,23 +1,24 @@
 body {
-    background-color: tan;
+    background-color: black;
+    color: lemonchiffon;
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3 { 
+h1 , h2 , h3 {
     text-decoration: underline;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: lemonchiffon;
 }
 
-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.principal {
+    text-align: center;
 }
 .warning {
+    background-color: rgb(155, 0, 0);
     font-size: 20px;
     text-align: center;
     text-decoration: underline;
