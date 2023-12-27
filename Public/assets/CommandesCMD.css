@@ -1,4 +1,19 @@
 body {
-    background-color: tan;
+    background-color: black;
+    color: lemonchiffon;
     font-family: 'Poppins', sans-serif;
+}
+
+header {
+    margin-top: 10px;
+}
+
+h1 , h2 , h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+a {
+    padding: 0.5em;
+    color: lemonchiffon;
 }
