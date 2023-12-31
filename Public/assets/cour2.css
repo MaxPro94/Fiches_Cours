@@ -1,8 +1,13 @@
 body {
     text-align: center;
-    background-color: black;
-    color: lemonchiffon;
+    background-color: lemonchiffon;
+    color: #03a9f4;
     font-family: 'Poppins', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 h1 , h2 , h3 {
@@ -12,5 +17,18 @@ h1 , h2 , h3 {
 
 a {
     text-decoration: none;
-    color: lemonchiffon;
+    color: #03a9f4;
+}
+
+a:hover {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffffff9d;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, .5);
+    text-decoration: none;
+    color: #03a9f4;
+}
+
+p {
+    font-size: 18px;
 }
