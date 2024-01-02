@@ -1,15 +1,122 @@
 --SQLite
-CREATE TABLE
-    IF NOT EXISTS utilisateur (
-        id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-        email VARCHAR NOT NULL,
-        name VARCHAR(30),
-        age SMALLINT
-    );
-
-INSERT INTO
-    utilisateur (email, name, age)
-VALUES
-    ("toto@gmail.com", "Simon", 48),
-    ("titi@gmail.com", "Maxime", 48),
-    ("tutu@gmail.com", "Laurent", 48);
+--Insertion de tables et de valeurs:
+--*********************************--
+-- DROP TABLE utilisateur
+-- CREATE TABLE
+--     utilisateur (
+--         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+--         email VARCHAR NOT NULL UNIQUE,
+--         mot_de_passe VARCHAR NOT NULL,
+--         name VARCHAR(30),
+--         age SMALLINT,
+--         nationalité VARCHAR
+--     );
+-- INSERT INTO
+--     utilisateur (email, mot_de_passe, name, age, nationalité)
+-- VALUES
+--     (
+--         "toto@gmail.com",
+--         "toto1234",
+--         "Simon",
+--         48,
+--         "Umpaloumpa"
+--     ),
+--     (
+--         "titi@gmail.com",
+--         "titi1234",
+--         "Maxime",
+--         29,
+--         "Francais"
+--     ),
+--     (
+--         "tutu@gmail.com",
+--         "tutu1234",
+--         "Sebastien",
+--         47,
+--         "Francais"
+--     ),
+--     (
+--         "tata@gmail.com",
+--         "tata1234",
+--         "Florian",
+--         44,
+--         "Francais"
+--     ),
+--     (
+--         "tete@gmail.com",
+--         "tete1234",
+--         "Maurice",
+--         42,
+--         "Francais"
+--     ),
+--     (
+--         "tamtam@gmail.com",
+--         "tamtam1234",
+--         "Godefroy",
+--         465,
+--         "Gaulois"
+--     );
+--Chercher les valeurs dans la db :
+-----------------------------------
+--Le "SELECT" selectionne, toutes "*" les colonnes, de quelle table ? "FROM" utilisateur
+--Nous aurions pu selectionner seulement les colonnes qui nous interesse en remplacant "*" par le nom des colonnes desirer.
+-- SELECT
+--     *
+-- FROM
+--     utilisateur;
+-----------------------------------
+--Ici nous rajoutons le mot clef WHERE qui est suivis de conditions, ici par exemple nous souhaitons selectionner les utilisateurs de moins de 40 ans :
+-- SELECT
+--     *
+-- FROM
+--     utilisateur
+-- WHERE
+--     age < 40;
+-----------------------------------
+--Ici nous ajoutons la condition pour l'utilisateur est comprise ENTRE (BETWEEN) 40 ET(AND) 1000:
+-- SELECT
+--     *
+-- FROM
+--     utilisateur
+-- WHERE
+--     age BETWEEN 40 AND 1000;
+-----------------------------------
+--Ici la condition est IN(dans), traduisons pluto cela par "contient". Nous selectionnons donc les valeurs contenant 'Francais' dans la colonne nationalité.
+--Attention la valeurs demander doit etre EXACTEMENT celle qui sera dans la colonne, si nous voulont etre plus englobant nous uiliseront le mot clef "LIKE" que nous verrons un peut plus bas.
+-- SELECT
+--     *
+-- FROM
+--     utilisateur
+-- WHERE
+--     nationalité IN ('Francais');
+-----------------------------------
+--Si on aurez voulu afficher tout les utilisateurs sauf les 'Francais' nous aurions fait comme cela :
+-- SELECT
+--     *
+-- FROM
+--     utilisateur
+-- WHERE
+--     nationalité != ('Francais');
+-----------------------------------
+--Si nous aurions voulu etre plus "englobant", disons sa comme cela, nous aurions plutot mit le mot clef "LIKE":
+-- SELECT
+--     *
+-- FROM
+--     utilisateur
+-- WHERE
+--     nationalité LIKE ('Fran%');
+--     nationalité LIKE ('%an%');
+--     nationalité LIKE ('%cais');
+------------------------------------
+--Nous pouvons aussi mettre plusieurs conditions a la suite grace au mot clef "AND":
+-- SELECT
+--     *
+-- FROM
+--     utilisateur
+-- WHERE
+--     age < 40 AND nationalité IN ('Francais'); 
+--Si nous aurions voulu remplir UNE SEULE de ces conditions nous aurions remplacer le "IN" par un "OR"(ou).
+--Si plus de deux conditions sont mise ex : WHERE age < 40 OR nationalité IN ('Francais') AND name != ('Maxime') 
+--Un peut comme mathematique ou les multiplications sont toujours prioritaires par rapport aux additions, le "AND" et toujours prioritaire face au "OR".
+--Nous aurions pu mettre des parenthese pour organiser autrement les priorités de notre requete.
+-----------------------------------

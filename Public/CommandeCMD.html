@@ -43,97 +43,133 @@
         PowerShell qui offre plus de fonctionnalités et de puissance.</p>
     <br>
     <br>
+    <h2>Type de language SQLite :</h2>
     <img src="assets/img/Commandes_CMD/Exemple_creation_db.png" alt="">
     <img src="assets/img/Commandes_CMD/Exemple_creation_db2..png" alt="">
     <br>
     <br>
-    <div class="contenu"><h2>Exercices et correction:</h2>
-    <p>Les exercices presenter si dessous sont disponibles sur le site : "sql.sh".</p>
-    <p>Veillez a bien DL les deux DB, afin de les ouvrirs et d'effectuer les exercices.</p>
-    <img src="assets/img/Commandes_CMD/ExoSQL/PrérequisExo.png" alt="">
-    <p>Si cette etape vous est inconnue je vous renvoie a la page "WAMP" pour toutes les informations nécéssaires.</p>
-    <h2>Les Exercices :</h2>
-    <img src="assets/img/Commandes_CMD/ExoSQL/TotalExoSQL.png" alt="">
-    <ul>
-        <li><span>Exercice 1 :</span></li>
-        <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom" et "ville_population" qui se trouve ou ? Dans la <span>TABLE</span> "villes_france_free" quelles <span>LIGNES</span> ? "ville_population_2012" DECROISSANTS LIMITER aux 10 premiers.</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo1MySQL.png" alt="">
-        <br>
-        <br>
-        <li><span>Exercice 2 :</span></li>
-        <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom" et "ville_surface" qui se trouve ou ? Dans la <span>TABLE</span> "villes_france_free" quelles <span>LIGNES</span> ? "ville_surface" <span>LIMITER aux 50 premiers</span> resultats.</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo2MySQL.png" alt="">
-        <br>
-        <br>
-        <li><span>Exercice 3 :</span></li>
-        <p>Nous allons selectionner <span>TOUT = (*)</span> Ou ça ? Dans la <span>TABLE</span> "villes_france_free" ou ? Dans la <span>colonne</span> "ville_code_postal" contrainte : <span>QUI COMMENCE PAR 97 = ('97%')</span>. </p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo3MysQL.png" alt="">
-        <br>
-        <br>
-        <li><span>Exercice 4 :</span></li>
-        <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom","ville_population " et "departement_code" Ou ça ? Dans LES <span>TABLES</span> "villes_france_free" et "departement" quelles <span>LIGNES</span> ? "ville_departement" = "departement_code" dans <span>L'ORDRE</span> "ville_population_2012" <span>DECROISSANT LIMITER aux 10</span> premiers resultats.</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo4MySQL.png" alt="">
-        <br>
-        <br>
-        <li><span>Exercice 5 :</span></li>
-        <p>Nous allons selectionner les <span>COLONNES</span> "departement_nom","departement_code", <span>COMPTER</span> le nombre de ville_id dans quelle <span>TABLES</span> ? "villes_france_free","departement" quelles <span>LIGNES</span> ? "departement_code" = "ville_departement" <span>GROUPER PAR</span> "departement_code".</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo5MySQL.png" alt="">
-        <p>Nous pouvons optimiser cette requête afain quelle soit plus clair :</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo5MySQLopti.png" alt="">
-        <p>Dans cette requête nous pouvons constater qu'une variable <span>'nombre_ville'</span> a etais créé, dans laquelle nous ajouterons la valeur calculer "ville_id". </p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/ExoMySQL5Finish.png" alt="">
-        <p>Voila a quoi ressemble une organisation d'ecriture des requetes bien plus claire.</p>
-        <br>
-        <br>
-        <li><span>Exercice 6 :</span></li>
-        <p>Nous allons selectionner les <span>COLONNES</span> "departement_nom","departement_code, on lui demande ensuite de <span>calculer le total</span> de "ville_surface" que l'on met dans une nouvelle variable appeler 'superficie', tout ca ce trouve dans les <span>TABLES</span> "villes_france_free","departement" Quelles <span>LIGNES</span> ? "departement_code" = "ville_departement" <span>GROUPER PAR</span> "departement_code" dans <span>L'ORDRE DECROISSANT LIMITER A 10</span> dans la variable 'superficie'.</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo6MySQL.png" alt="">
-        <br>
-        <br>
-        <li><span>Exercice 7 :</span></li>
-        <p>Nous allons selectionner tout et demander de tout <span>COMPTER</span> dans quelle <span>TABLE</span> ? "villes_france_free" Quelle <span>LIGNE</span> ? "ville_nom" ajout d'une contrainte : <span>LIKE qui signifie "preference" 'Saint-%' (Qui commence par 'Saint-')</span>.</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo7MySQL.png" alt="">
-        <br>
-        <br>
-        <li><span>Exercice 8 :</span></li>
-        <p>Nous allons slectionner la <span>COLONNE</span> "ville_nom" de <span>COMPTER</span> le total et de la mettre dans une <span>VARIABLE</span> appeler 'cpt'. Dans quelle <span>TABLE</span> ? "villes_france_free" <span>GOUPER PAR</span> "ville_nom", <span>HAVING > 1 : seulement ceux qui ont plusieurs fois le meme nom. Donc plus grand que 1.</span> Dans <span>L'ORDRE DECROISSANT</span>.</p>
-        <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo8MySQL.png" alt="">
-    </ul></div> 
-    <div class="commandes"><h2>Listes de commandes les plus generique CMD:</h2>
-    <ul>
-        <li>VARCHAR : Limitation de la chaine de caractère ( 255 )</li>
-        <li>INT : Uniquement des nombres</li>
-        <li>Delete : Detruire</li>
-        <li>SELECT / SELECT * : Selectionner / Selectionner toutes les colonnes</li>
-        <li>VALUES (), (), () : Ajouter des valeurs</li>
-        <li>CREATE TABLE : Créé une table</li>
-        <li>INSERT INTO : Inserer dans</li>
-        <li>UPDATE : Mise a jour</li>
-        <li>NOT NULL : Obligation pour l'utilisateur de remplir la ligne demander</li>
-        <p>Exemple :</p>
-        <img src="assets/img/Commandes_CMD/CMD1.png" alt="">
-        <li>DEFAULT : Si la ligne n'est pas rempli on donne un status par defaut.</li>
-        <p>Exemple :</p>
-        <img src="assets/img/Commandes_CMD/CMD2.png" alt="">
-        <li>PRIMARY KEY : Rendre la colonne unique</li>
-        <li>AUTOINCREMENT : Attribut seul un numéro si la colonne n'est pas remplie.</li>
-        <li>SMALLINT : Pas plus que 255</li>
-        <li>UNIQUE : Obligation que la ligne soit unique</li>
-        <li>DROP TABLE IF EXISTS : Detruit la table si elle existe</li>
-        <p>Exemple :</p>
-        <img src="assets/img/Commandes_CMD/CMD3.png" alt="">
-        <li>'B%', '%B', '%B%' : Qui commence par B, finit par un B, Contient un B</li>
-        <p>Exemple :</p>
-        <img src="assets/img/Commandes_CMD/CMD4.png" alt="">
-        <li>.tables : Afficher les tables</li>
-        <li>.help : Voir les commandes "."</li>
-        <li>.header on : Voir les entêtes</li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul></div>
+    <div class="contenu">
+        <h2>Exercices et correction:</h2>
+        <p>Les exercices presenter si dessous sont disponibles sur le site : "sql.sh".</p>
+        <p>Veillez a bien DL les deux DB, afin de les ouvrirs et d'effectuer les exercices.</p>
+        <img src="assets/img/Commandes_CMD/ExoSQL/PrérequisExo.png" alt="">
+        <p>Si cette etape vous est inconnue je vous renvoie a la page "WAMP" pour toutes les informations nécéssaires.
+        </p>
+        <h2>Les Exercices :</h2>
+        <img src="assets/img/Commandes_CMD/ExoSQL/TotalExoSQL.png" alt="">
+        <ul>
+            <li><span>Exercice 1 :</span></li>
+            <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom" et "ville_population" qui se trouve ou ?
+                Dans la <span>TABLE</span> "villes_france_free" quelles <span>LIGNES</span> ? "ville_population_2012"
+                DECROISSANTS LIMITER aux 10 premiers.</p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo1MySQL.png" alt="">
+            <br>
+            <br>
+            <li><span>Exercice 2 :</span></li>
+            <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom" et "ville_surface" qui se trouve ou ? Dans
+                la <span>TABLE</span> "villes_france_free" quelles <span>LIGNES</span> ? "ville_surface" <span>LIMITER
+                    aux 50 premiers</span> resultats.</p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo2MySQL.png" alt="">
+            <br>
+            <br>
+            <li><span>Exercice 3 :</span></li>
+            <p>Nous allons selectionner <span>TOUT = (*)</span> Ou ça ? Dans la <span>TABLE</span> "villes_france_free"
+                ou ? Dans la <span>COLONNE</span> "ville_code_postal" <span>WHERE</span> quelles conditions ?
+                <span>COMMENCE PAR 97 =
+                    ('97%')</span>.
+            </p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo3MysQL.png" alt="">
+            <p><span>WHERE</span>est un mot clef qui doit etre suivis de conditions</p>
+            <br>
+            <br>
+            <li><span>Exercice 4 :</span></li>
+            <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom","ville_population " et "departement_code"
+                Ou ça ? Dans LES <span>TABLES</span> "villes_france_free" et "departement" <span>WHERE</span> quelles
+                conditions ?
+                "ville_departement" = "departement_code" dans <span>L'ORDRE</span> "ville_population_2012"
+                <span>DECROISSANT LIMITER aux 10</span> premiers resultats.
+            </p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo4MySQL.png" alt="">
+            <br>
+            <br>
+            <li><span>Exercice 5 :</span></li>
+            <p>Nous allons selectionner les <span>COLONNES</span> "departement_nom","departement_code",
+                <span>COMPTER</span> le nombre de ville_id dans quelle <span>TABLES</span> ?
+                "villes_france_free","departement" <span>WHERE</span> quelles conditions ? "departement_code" =
+                "ville_departement" <span>GROUPER PAR</span> "departement_code".
+            </p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo5MySQL.png" alt="">
+            <p>Nous pouvons optimiser cette requête afain quelle soit plus clair :</p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo5MySQLopti.png" alt="">
+            <p>Dans cette requête nous pouvons constater qu'une variable <span>'nombre_ville'</span> a etais créé, dans
+                laquelle nous ajouterons la valeur calculer "ville_id". </p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/ExoMySQL5Finish.png" alt="">
+            <p>Voila a quoi ressemble une organisation d'ecriture des requetes bien plus claire.</p>
+            <br>
+            <br>
+            <li><span>Exercice 6 :</span></li>
+            <p>Nous allons selectionner les <span>COLONNES</span> "departement_nom","departement_code, on lui demande
+                ensuite de <span>calculer le total</span> de "ville_surface" que l'on met dans une nouvelle variable
+                appeler 'superficie', tout ca ce trouve dans les <span>TABLES</span> "villes_france_free","departement"
+                <span>WHERE</span> quelles ? "departement_code" = "ville_departement" <span>GROUPER PAR</span>
+                "departement_code" dans <span>L'ORDRE DECROISSANT LIMITER A 10</span> dans la variable 'superficie'.
+            </p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo6MySQL.png" alt="">
+            <br>
+            <br>
+            <li><span>Exercice 7 :</span></li>
+            <p>Nous allons selectionner tout et demander de tout <span>COMPTER</span> dans quelle <span>TABLE</span> ?
+                "villes_france_free" Quelle <span>LIGNE</span> ? "ville_nom" ajout d'une contrainte : <span>LIKE qui
+                    signifie "preference" 'Saint-%' (Qui commence par 'Saint-')</span>.</p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo7MySQL.png" alt="">
+            <br>
+            <br>
+            <li><span>Exercice 8 :</span></li>
+            <p>Nous allons slectionner la <span>COLONNE</span> "ville_nom" de <span>COMPTER</span> le total et de la
+                mettre dans une <span>VARIABLE</span> appeler 'cpt'. Dans quelle <span>TABLE</span> ?
+                "villes_france_free" <span>GOUPER PAR</span> "ville_nom", <span>HAVING > 1 : seulement ceux qui ont
+                    plusieurs fois le meme nom. Donc plus grand que 1.</span> Dans <span>L'ORDRE DECROISSANT</span>.</p>
+            <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo8MySQL.png" alt="">
+        </ul>
+    </div>
+    <div class="commandes">
+        <h2>Listes de commandes les plus generique SQLite :</h2>
+        <ul>
+            <li>WHERE : Mot clef suivis de conditions</li>
+            <li>VARCHAR : Limitation de la chaine de caractère ( 255 )</li>
+            <li>INT : Uniquement des nombres</li>
+            <li>Delete : Detruire</li>
+            <li>SELECT / SELECT * : Selectionner / Selectionner toutes les colonnes</li>
+            <li>VALUES (), (), () : Ajouter des valeurs</li>
+            <li>CREATE TABLE : Créé une table</li>
+            <li>INSERT INTO : Inserer dans</li>
+            <li>UPDATE : Mise a jour</li>
+            <li>NOT NULL : Obligation pour l'utilisateur de remplir la ligne demander</li>
+            <p>Exemple :</p>
+            <img src="assets/img/Commandes_CMD/CMD1.png" alt="">
+            <li>DEFAULT : Si la ligne n'est pas rempli on donne un status par defaut.</li>
+            <p>Exemple :</p>
+            <img src="assets/img/Commandes_CMD/CMD2.png" alt="">
+            <li>PRIMARY KEY : Rendre la colonne unique</li>
+            <li>AUTOINCREMENT : Attribut seul un numéro si la colonne n'est pas remplie.</li>
+            <li>SMALLINT : Pas plus que 255</li>
+            <li>UNIQUE : Obligation que la ligne soit unique</li>
+            <li>DROP TABLE IF EXISTS : Detruit la table si elle existe</li>
+            <p>Exemple :</p>
+            <img src="assets/img/Commandes_CMD/CMD3.png" alt="">
+            <li>'B%', '%B', '%B%' : Qui commence par B, finit par un B, Contient un B</li>
+            <p>Exemple :</p>
+            <img src="assets/img/Commandes_CMD/CMD4.png" alt="">
+            <li>.tables : Afficher les tables</li>
+            <li>.help : Voir les commandes "."</li>
+            <li>.header on : Voir les entêtes</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
 
 
 </body>
