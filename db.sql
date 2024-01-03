@@ -57,6 +57,7 @@
 --         "Gaulois"
 --     );
 --Chercher les valeurs dans la db :
+--*********************************
 -----------------------------------
 --Le "SELECT" selectionne, toutes "*" les colonnes, de quelle table ? "FROM" utilisateur
 --Nous aurions pu selectionner seulement les colonnes qui nous interesse en remplacant "*" par le nom des colonnes desirer.
@@ -114,7 +115,7 @@
 -- FROM
 --     utilisateur
 -- WHERE
---     age < 40 AND nationalité IN ('Francais'); 
+--     age < 40 AND nationalité IN ('Francais') OR name LIKE 'Max%'; 
 --Si nous aurions voulu remplir UNE SEULE de ces conditions nous aurions remplacer le "IN" par un "OR"(ou).
 --Si plus de deux conditions sont mise ex : WHERE age < 40 OR nationalité IN ('Francais') AND name != ('Maxime') 
 --Un peut comme mathematique ou les multiplications sont toujours prioritaires par rapport aux additions, le "AND" et toujours prioritaire face au "OR".
