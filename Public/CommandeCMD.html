@@ -60,14 +60,14 @@
         <ul>
             <li><span>Exercice 1 :</span></li>
             <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom" et "ville_population" qui se trouve ou ?
-                Dans la <span>TABLE</span> "villes_france_free" quelles <span>LIGNES</span> ? "ville_population_2012"
+                Dans la <span>TABLE</span> "villes_france_free" quelles <span>WHERE</span> ? "ville_population_2012"
                 DECROISSANTS LIMITER aux 10 premiers.</p>
             <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo1MySQL.png" alt="">
             <br>
             <br>
             <li><span>Exercice 2 :</span></li>
             <p>Nous allons selectionner les <span>COLONNES</span> "ville_nom" et "ville_surface" qui se trouve ou ? Dans
-                la <span>TABLE</span> "villes_france_free" quelles <span>LIGNES</span> ? "ville_surface" <span>LIMITER
+                la <span>TABLE</span> "villes_france_free" quelles <span>WHERE</span> ? "ville_surface" <span>LIMITER
                     aux 50 premiers</span> resultats.</p>
             <img src="assets/img/Commandes_CMD/Cour2ExoSQLite/Exo2MySQL.png" alt="">
             <br>
@@ -133,40 +133,80 @@
         </ul>
     </div>
     <div class="commandes">
-        <h2>Listes de commandes les plus generique SQLite :</h2>
+        <h2>Listes des commandes les plus generiques SQLite :</h2>
         <ul>
-            <li>WHERE : Mot clef suivis de conditions</li>
-            <li>VARCHAR : Limitation de la chaine de caractère ( 255 )</li>
-            <li>INT : Uniquement des nombres</li>
-            <li>Delete : Detruire</li>
-            <li>SELECT / SELECT * : Selectionner / Selectionner toutes les colonnes</li>
-            <li>VALUES (), (), () : Ajouter des valeurs</li>
-            <li>CREATE TABLE : Créé une table</li>
-            <li>INSERT INTO : Inserer dans</li>
-            <li>UPDATE : Mise a jour</li>
-            <li>NOT NULL : Obligation pour l'utilisateur de remplir la ligne demander</li>
+            <li><span class="def">WHERE :</span> Mot clef suivis de conditions</li>
             <p>Exemple :</p>
+            <img src="assets/img/Commandes_CMD/Exemple_WHERE.png" alt="">
+            <br>
+            <li><span class="def">VARCHAR :</span> Limitation de la chaine de caractère ( 255 )</li>
+            <br>
+            <li><span class="def">INT :</span> Uniquement des nombres</li>
+            <br>
+            <li><span class="def">Delete :</span> Detruire</li>
+            <br>
+            <li><span class="def">SELECT / SELECT * :</span> Selectionner / Selectionner toutes les colonnes</li>
+            <br>
+            <li><span class="def">VALUES (), (), () :</span> Ajouter des valeurs</li>
+            <br>
+            <li><span class="def">CREATE TABLE :</span> Créé une table</li>
+            <br>
+            <li><span class="def">INSERT INTO :</span> Inserer dans</li>
+            <br>
+            <li><span class="def">UPDATE :</span> Mise a jour definitive</li>
+            <br>
+            <li><span class="def">NOT NULL :</span> Obligation pour l'utilisateur de remplir la ligne demander</li>
+            <p><h3>Exemple :</h3></p>
             <img src="assets/img/Commandes_CMD/CMD1.png" alt="">
-            <li>DEFAULT : Si la ligne n'est pas rempli on donne un status par defaut.</li>
-            <p>Exemple :</p>
+            <li><span class="def">DEFAULT :</span> Si la ligne n'est pas rempli on donne un status par defaut.</li>
+            <p><h3>Exemple :</h3></p>
             <img src="assets/img/Commandes_CMD/CMD2.png" alt="">
-            <li>PRIMARY KEY : Rendre la colonne unique</li>
-            <li>AUTOINCREMENT : Attribut seul un numéro si la colonne n'est pas remplie.</li>
-            <li>SMALLINT : Pas plus que 255</li>
-            <li>UNIQUE : Obligation que la ligne soit unique</li>
-            <li>DROP TABLE IF EXISTS : Detruit la table si elle existe</li>
-            <p>Exemple :</p>
+            <br>
+            <li><span class="def">PRIMARY KEY :</span> Rendre la colonne unique</li>
+            <br>
+            <li><span class="def">AUTOINCREMENT :</span> Attribut seul un numéro si la colonne n'est pas remplie.</li>
+            <br>
+            <li><span class="def">SMALLINT :</span> Pas plus que 255</li>
+            <br>
+            <li><span class="def">UNIQUE :</span> Obligation que la ligne soit unique</li>
+            <br>
+            <li><span class="def">DROP TABLE IF EXISTS :</span> Detruit la table si elle existe</li>
+            <p><h3>Exemple :</h3></p>
             <img src="assets/img/Commandes_CMD/CMD3.png" alt="">
             <li>'B%', '%B', '%B%' : Qui commence par B, finit par un B, Contient un B</li>
-            <p>Exemple :</p>
+            <p><h3>Exemple :</h3></p>
             <img src="assets/img/Commandes_CMD/CMD4.png" alt="">
-            <li>.tables : Afficher les tables</li>
-            <li>.help : Voir les commandes "."</li>
-            <li>.header on : Voir les entêtes</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <br>
+            <li><span class="def">.tables :</span> Afficher les tables</li>
+            <br>
+            <li><span class="def">.help :</span> Voir les commandes "."</li>
+            <br>
+            <li><span class="def">.header on :</span> Voir les entêtes</li>
+            <br>
+            <li><span class="def">name_table.name_colonne :</span> Est aussi accepter pour sdes selections complementaires.</li>
+            <br>
+            <li><span class="def">SUM(name_colonne) :</span> Calculer la somme total de la colonne souhaité.</li>
+            <br>
+            <li><span class="def">AVG(name_colonne) :</span> Fait la moyenne de la colonne souhaité</li>
+            <br>
+            <li><span class="def">REPLACE :</span> Remplacement de l'affichage demander.</li>
+            <br>
+            <li><span class="def">DISTINCT :</span> Evite les doublons dans les resultats.</li>
+            <br>
+            <li><span class="def">AS :</span> Renommer une colle ou une table.</li>
+            <br>
+            <li><span class="def">EXISTS :</span> Savoir si il y'a une presence ou non de la ligne</li>
+            <br>
+            <li><span class="def">GROUP BY :</span> Elle permet de diviser les résultats en groupes en fonction des valeurs communes dans une ou plusieurs colonnes spécifiées. Après le regroupement, vous pouvez appliquer des fonctions d'agrégation (telles que COUNT, SUM, AVG, MAX, MIN) pour effectuer des calculs sur chaque groupe.</li>
+            <p><h3>Exemple et explications :</h3></p>
+            <p>Supposons que nous avons une table "commandes" avec les colonnes "id_client", "date_commande" et "montant". Nous voulons obtenir le montant total des commandes pour chaque client. Nous pouvons utiliser la clause 'GROUP BY'de la manière suivante :</p>
+            <img src="assets/img/Commandes_CMD/ExempleGROUP_BY.png" alt="">
+            <p>Dans cet exemple, la clause 'GROUP BY id_client'egroupe les résultats par la colonne "id_client". La fonction d'agrégation 'SUM(montant)' est alors appliquée à chaque groupe pour calculer le montant total des commandes pour chaque client.</p>
+            <br>
+            <li><span class="def"></span></li>
+            <li><span class="def"></span></li>
+            <li><span class="def"></span></li>
+            <li><span class="def"></span></li>
             <li></li>
         </ul>
     </div>

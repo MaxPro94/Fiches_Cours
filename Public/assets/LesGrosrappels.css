@@ -33,3 +33,10 @@ p {
     font-size: 18px;
 }
 
+.rappels_sql {
+    text-align: center;
+}
+span {
+    text-decoration: underline;
+    color: red;
+}
