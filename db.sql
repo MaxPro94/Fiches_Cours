@@ -121,3 +121,134 @@
 --Un peut comme mathematique ou les multiplications sont toujours prioritaires par rapport aux additions, le "AND" et toujours prioritaire face au "OR".
 --Nous aurions pu mettre des parenthese pour organiser autrement les priorités de notre requete.
 -----------------------------------
+-- Exercices SQL.sh Chapitre 2.
+-----------------------------------
+--Exercice 1:
+--**
+--Obtenir l’utilisateur ayant le prénom “Muriel” et le mot de passe “test11”, sachant que l’encodage du mot de passe est effectué avec l’algorithme Sha1.
+--SELECT prénom, mot de passe
+--FROM clients
+--WHERE prenom = 'Muriel' AND mot de passe = SHA1('test11');
+-----------------------------------
+--Exercice 2:
+--Obtenir la liste de tous les produits qui sont présent sur plusieurs commandes.
+--**
+--SELECT nom, COUNT(*) AS total_produit
+--FROM commande_ligne 
+--GROUP BY nom
+--HAVING total_produit > 1
+--ORDER BY total_produit DESC;
+-----------------------------------
+--Exercice 3:
+--Obtenir la liste de tous les produits qui sont présent sur plusieurs commandes et y ajouter une colonne qui liste les identifiants des commandes associées.
+--**
+--SELECT nom, commande_ligne.id, COUNT(*) AS total_produit, GROUP_CONCAT(commande_id)
+--FROM commande_ligne
+--GROUP BY nom
+--HAVING total_produit > 1
+--ORDER BY total_produit DESC;
+-----------------------------------
+--Exercice 4:
+--Enregistrer le prix total à l’intérieur de chaque ligne des commandes, en fonction du prix unitaire et de la quantité.
+--**
+--UPDATE commande_ligne
+--SET prix_total = prix_unitaire * quantite;
+-----------------------------------
+--Exercice 5:
+--Obtenir le montant total pour chaque commande et y voir facilement la date associée à cette commande ainsi que le prénom et nom du client associé.
+--**
+--SELECT commande_ligne.prix_total, commande.date_achat, commande.id, client.prenom, client.nom
+--FROM client
+--JOIN commande ON client.id = commande.client_id
+--JOIN commande_ligne ON commande.client_id = commande_ligne.commande_id
+--ORDER BY prix_total DESC;
+-----------------------------------
+--Exercice 6:
+--(difficulté très haute) Enregistrer le montant total de chaque commande dans le champ intitulé “cache_prix_total”.
+--**
+--UPDATE commande
+--SET cache_prix_total = (
+--SELECT prix_total
+--FROM commande_ligne
+--WHERE commande_ligne.id = commande.id;
+----------------------------------
+--Exercice 7:
+--Obtenir le montant global de toutes les commandes, pour chaque mois
+--**
+--SELECT date_achat, SUM(cache_prix_total) AS montant_total
+--FROM commande
+--GROUP BY MONTH(date_achat)
+--ORDER BY montant_total DESC;
+----------------------------------
+--Exercice 8:
+--Obtenir la liste des 10 clients qui ont effectué le plus grand montant de commandes, et obtenir ce montant total pour chaque client.
+--**
+--SELECT client.prenom, client.nom, ROUND(SUM(cache_prix_total),2) 
+--FROM commande JOIN client ON commande.id = client.id 
+--GROUP BY nom 
+--ORDER BY cache_prix_total DESC LIMIT 10;
+----------------------------------
+--Exercice 9:
+--Obtenir le montant total des commandes pour chaque date.
+--**
+--SELECT date_achat, SUM(cache_prix_total) AS total_commande
+--FROM commande
+--GROUP BY date_achat
+--ORDER BY total_commande DESC;
+----------------------------------
+--Exercice 10:
+--Ajouter une colonne intitulée “category” à la table contenant les commandes. Cette colonne contiendra une valeur numérique.
+--**
+--ALTER TABLE commande
+--ADD category VARCHAR;
+----------------------------------
+--Exercice 11:
+--Enregistrer la valeur de la catégorie, en suivant les règles suivantes :
+--“1” pour les commandes de moins de 200€
+--“2” pour les commandes entre 200€ et 500€
+--“3” pour les commandes entre 500€ et 1.000€
+--“4” pour les commandes supérieures à 1.000€
+--**
+--UPDATE commande
+--SET category = 1
+--WHERE cache_total_prix < 200;
+--UPDATE commande
+--SET category = 2
+--WHERE cache_total_prix BETWEEN 200 AND 500;
+--UPDATE commande
+--SET category = 3
+--WHERE cache_total_prix BETWEEN 500 AND 1000;
+--UPDATE commande
+--SET category = 4
+--WHERE cache_total_prix > 1000;
+----------------------------------
+--Exercice 12:
+--Créer une table intitulée “commande_category” qui contiendra le descriptif de ces catégories
+--**
+--CREATE TABLE commande_category (
+--  id PRIMARY KEY AUTOINCREMENT UNSIGNED NOT NULL, 
+--  descriptif VARCHAR(30)
+--  );
+--ALTER TABLE commande
+--ADD FOREIGN KEY ('category') REFERENCES 'commande_category' ('id');
+----------------------------------
+--Exercice 13:
+--Insérer les 4 descriptifs de chaque catégorie au sein de la table précédemment créée.
+--INSERT INTO commande_category ('descriptif') 
+--  VALUES (
+--      'Proletarias'
+--      'Chomage' 
+--      'Classe moyenne'
+--      'Franc-maçonnerie'
+--);
+----------------------------------
+--Exercice 14:
+--Supprimer toutes les commandes (et les lignes des commandes) inférieur au 1er février 2019. Cela doit être effectué en 2 requêtes maximum.
+--**
+--DELETE FROM commandes
+--WHERE date_achat < 2019-02-01;
+--DELETE FROM commandes_ligne
+--JOIN commandes ON commandes.id = commandes_ligne.id
+--WHERE date_achat < 2019-02-01; 
+
+
