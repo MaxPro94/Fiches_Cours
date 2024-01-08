@@ -168,7 +168,7 @@
 --**
 --UPDATE commande
 --SET cache_prix_total = (
---SELECT prix_total
+--SELECT SUM(prix_total)
 --FROM commande_ligne
 --WHERE commande_ligne.id = commande.id;
 ----------------------------------
@@ -184,7 +184,8 @@
 --Obtenir la liste des 10 clients qui ont effectué le plus grand montant de commandes, et obtenir ce montant total pour chaque client.
 --**
 --SELECT client.prenom, client.nom, ROUND(SUM(cache_prix_total),2) 
---FROM commande JOIN client ON commande.id = client.id 
+--FROM commande 
+--JOIN client ON commande.id = client.id 
 --GROUP BY nom 
 --ORDER BY cache_prix_total DESC LIMIT 10;
 ----------------------------------
@@ -221,6 +222,13 @@
 --UPDATE commande
 --SET category = 4
 --WHERE cache_total_prix > 1000;
+--*****OR*****--
+--UPDATE commande
+--SET category = (
+--CASE WHEN cache_prix_total < 200 THEN 1
+--CASE WHEN cache_prix_total < 500 THEN 2
+--CASE WHEN cache_prix_total < 1000 THEN 3
+--CASE WHEN cache_prix_total > 1000 THEN 4 END);
 ----------------------------------
 --Exercice 12:
 --Créer une table intitulée “commande_category” qui contiendra le descriptif de ces catégories
