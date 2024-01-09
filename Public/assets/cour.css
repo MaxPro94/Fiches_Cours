@@ -40,6 +40,25 @@ a:hover {
     text-decoration: underline;
 }
 
+.mot-clef {
+    font-size: 18px;
+    text-decoration: underline;
+    color: red;
+}
+
+.installation_wamp {
+    text-align: center;
+}
+
 p { 
     font-size: 18px;
+}
+
+.screen {
+    max-width: 1200px;
+    max-height: 500px;
+}
+
+.rappels_sql {
+    text-align: center;
 }
