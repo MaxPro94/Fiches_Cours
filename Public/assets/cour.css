@@ -46,6 +46,12 @@ a:hover {
     color: red;
 }
 
+.mot-clef2 {
+    font-size: 27px;
+    text-decoration: underline;
+    color: red;
+}
+
 .installation_wamp {
     text-align: center;
 }
@@ -61,4 +67,13 @@ p {
 
 .rappels_sql {
     text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#pydb {
+    text-align: left;
+    margin-left: 10px;
 }
