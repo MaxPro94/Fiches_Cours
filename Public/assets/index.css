@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #03a9f4;
+    background: #FFE8d6;
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@ a {
     position: relative;
     width: 300px;
     height: 300px;
-    background: rgba(255, 250, 205, 0.726);
+    background: linear-gradient(45deg,#FFE8d6, #cb997e);
     padding: 30px;
     transition: all 0.5s;
     z-index: 2;
@@ -76,8 +76,9 @@ a {
 }
 
 .box:hover, .box:hover ~ .background {
+    color: #FFE8d6;
     opacity: 1;
-    background: #e2a9e5;
-    background: linear-gradient(45deg, lemonchiffon 15%, #03a9f4 100%);
+    background: #a5a58d;
+    background: linear-gradient(45deg, #6b705c 15%, #cb997e);
 }
 
