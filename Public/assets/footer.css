@@ -1,0 +1,26 @@
+footer {
+    background: linear-gradient(#6b705c, #4b4e3f);
+    border-top: 2px solid #fefefe;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 20px;
+    color: #FFE8d6;
+    text-align: center;
+}
+
+.liens_footer {
+    padding: 20px;
+}
+
+footer p {
+    padding: 20px;
+    opacity: 40%;
+    font-size: 14px;
+    margin: 0;
+}
+
+footer a {
+    opacity: 50%;
+    color: #FFE8d6;
+    text-decoration: none;
+    margin-left: 60px;
+}

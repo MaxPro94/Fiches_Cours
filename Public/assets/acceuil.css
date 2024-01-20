@@ -12,7 +12,7 @@ body {
 
 header.barre_nav {
     background: linear-gradient(#b7b7a4,#6b705c);
-    border-bottom: 1px solid #fefefe;
+    border-bottom: 2px solid #fefefe;
     border-radius: 0px 0px 10px 10px;
 }
 
