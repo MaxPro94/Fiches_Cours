@@ -1,0 +1,10 @@
+footer {
+    background: linear-gradient(#6b705c, #4b4e3f);
+    border-top: 1px solid #fefefe;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
