@@ -98,7 +98,7 @@ footer, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 90vh;
     opacity: 95%;
 
 }
@@ -196,10 +196,9 @@ footer, p {
     }
 
     .material-symbols-outlined {
-        box-sizing: border-box;
-        width: 10px;
-        align-items: center;
-        justify-content: center;
+        margin-left: 25%;
+        margin-bottom: 70%;
+        margin-top: 0;
     }
 
 

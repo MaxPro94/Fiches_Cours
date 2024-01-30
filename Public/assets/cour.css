@@ -133,3 +133,23 @@ h5 {
     font-size: 18px;
     text-decoration: underline #ddbea9 2px;
 }
+
+.liens {
+    text-decoration: none;
+    color: #6b705c;
+    font-size: 22px;
+    font-weight: 700;
+
+}
+
+.liens:hover {
+    color: #fefefe;
+    font-size: 32px;
+    transition: 0.2s;
+}
+
+
+.balises ul {
+    list-style: none;
+    text-align: center;
+}
