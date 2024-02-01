@@ -28,7 +28,7 @@ header.barre_nav {
 
 .bouton_acceuil, .bouton_cours, .bouton_rappel, .bouton_citation, .bouton_info {
     text-decoration: none;
-    width: 145px;
+    width: 10%;
     height: 35px;
     border: 1px solid #fefefe;
     border-radius: 15px 5px 15px 5px;
@@ -39,7 +39,7 @@ header.barre_nav {
     font-weight: 900;
     text-align: center;
     position: absolute;
-    top: 12%;
+    top: 10%;
     font-family: 'Poppins', sans-serif;
     padding: 1px;
 }
