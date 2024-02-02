@@ -54,7 +54,7 @@
                 info
             </div>Infos
         </a>
-        <a href="https://www.metz-numeric-school.fr/fr"><img id="LogoMNS"
+        <a href="https://www.metz-numeric-school.fr/fr" target="_blank"><img id="LogoMNS"
                 src="assets/img/Barre de naviguation/LogoMNS1.png" alt="Logo Metz Numeric School"></a>
     </header>
 
@@ -67,7 +67,7 @@
         <p>Le mode de fonctionnement est le suivant : </p>
         <div>
             <ol>
-                <li>le navigateur envoie une requête http ou https au serveur web (en internet, extranet ou intranet)
+                <li>Le navigateur envoie une requête http ou https au serveur web (en internet, extranet ou intranet)
                 </li>
                 <li>Le serveur web interprète la requête http ou https en utilisant un langage de programmation et
                     envoie
@@ -79,18 +79,23 @@
                 <li>Le navigateur du client affiche le html et exécute le langage javascript</li>
             </ol>
         </div>
-
+        <br>
+        <br>
         <h2>Une base de quoi ?</h2>
         <p>Une base de données, c'est quoi ? Voyons ca comme un container:</p>
         <img src="assets/img/cour2/container1.png" alt="">
         <p>Dans ce container il y'a quoi ?</p>
+        <br>
         <p>Des plus petits container, appeler collection:</p>
         <img src="assets/img/cour2/container1.1.png" alt="">
+        <br>
         <p>Dans lesquel nous trouvons des tables:</p>
         <img src="assets/img/cour2/container1.2.png" alt="">
+        <br>
         <p>Mais y'a quoi dans une "tables" ?</p>
         <p>Une table nous pouvons imaginer cela comme un tableau excel: Plusieurs colonne (column) avec des entêtes:</p>
         <img src="assets/img/cour2/tables.png" alt="">
+        <br>
         <h2>Comment interagir avec une base de données ?</h2>
         <p>Afin d'interagir avec une base de données nous allons avoir besoin d'un SGBDr cela signifie "Système de
             Gestion
@@ -102,6 +107,7 @@
         <p>Pour le moment j'utiliserais SQLite (SQL = Structure Query Language) afin d'interagir avec la base de
             données.
         </p>
+        <br>
         <h3>CRUD:</h3>
         <p>
             CRUD est un acronyme qui désigne les quatre opérations de base effectuées sur les données dans un système de
@@ -130,13 +136,16 @@
             frameworks de développement web et SGBD fournissent des fonctionnalités ou des méthodes spécifiques pour
             faciliter la mise en œuvre des opérations CRUD.
         </p>
+        <br>
         <h2>MCD / MLD</h2>
         <img src="assets/img/cour2/MCD_MLD.png" alt="">
         <p>Avant de créé une base de données et de l'utiliser nous allons toujours commencer par la creation d'un MCD
             (Modele conceptuel de données) c'est un schéma de fonctionnement de la base de données.</p>
         <p>Cela nous permet d'optimiser, controler, corriger notre "db" (data base) avant la creation de la MLD.</p>
+        <br>
         <h3>MCD:</h3>
         <img src="assets/img/cour2/MCD.png" alt="">
+        <br>
         <h2>Les primary key:</h2>
         <p>
             Une clé primaire, ou "primary key" en anglais, est un concept essentiel en bases de données relationnelles.
@@ -161,6 +170,7 @@
             clause
             PRIMARY KEY.
         </p>
+        <br>
         <h2>Les foreign key:</h2>
         <p>
             Une clé étrangère, ou "foreign key" en anglais, est un concept clé dans les bases de données relationnelles.
@@ -191,42 +201,48 @@
                 table à l'aide de la clause FOREIGN KEY. La syntaxe peut inclure des spécifications sur les actions à
                 entreprendre en cas de mise à jour ou de suppression de la clé primaire.</li>
         </p>
-        <p>Exemple de syntaxe en SQL :
+        <br>
+        <p>Exemple de syntaxe en SQL :</p>
             <img src="assets/img/cour2/exemple_foreign_key.png" alt="">
-            Dans cet exemple, CleEtrangereID est la clé étrangère dans la table fille, et elle référence la clé primaire
+            <p>Dans cet exemple, CleEtrangereID est la clé étrangère dans la table fille, et elle référence la clé primaire
             ID
-            dans la table parente.
-        </p>
-
+            dans la table parente.</p>
+        <br>
         <h2>Creation d'une base de données avce SQLite:</h2>
         <p>Ouvrir le shell SQLite :</p>
         <p>Ouvrez un terminal ou une invite de commande, puis tapez la commande suivante pour accéder au shell SQLite et
             créer une nouvelle base de données (remplacez "ma_base_de_donnees.db" par le nom que vous souhaitez donner à
             votre base de données) :</p>
         <img src="assets/img/cour2/Creatdb1.png" alt="">
+        <br>
         <p>Créer une table :</p>
         <p>À l'intérieur du shell SQLite, vous pouvez créer une table en spécifiant le schéma de la table. Par exemple,
             pour
             créer une table "utilisateurs" avec des colonnes "id", "nom" et "age", vous pouvez utiliser la commande SQL
             suivante :</p>
         <img src="assets/img/cour2/Creatdb2.png" alt="">
+        <br>
         <p>Quitter le shell :</p>
         <p>Pour quitter le shell SQLite, vous pouvez utiliser la commande suivante :</p>
         <img src="assets/img/cour2/Creatdb3.png" alt="">
+        <br>
         <h2>Exemple de creation de db sur VSCode avec SQLite:</h2>
         <img src="assets/img/cour2/Exemple_creation_db.png" alt="">
         <img src="assets/img/cour2/Exemple_creation_db2..png" alt="">
-        <p></p>
-        <p></p>
+        <br>
         <h2>Les commandes de base SQLite</h2>
         <img src="assets/img/cour2/Listes_commande_de_base_SQLite.png" alt="">
     </div>
+
+    <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
+        keyboard_arrow_up
+        </span></a>
     <footer>
         <div class="liens-footer">
-            <a href="https://www.instagram.com/maxx57">Instagram</a>
-            <a href="https://www.facebook.com/maxx.thome">Facebook</a>
-            <a href="https://www.linkedin.com/">Linked in</a>
-            <a href="https://entreprendre.service-public.fr/vosdroits/F31228">Mentions légales</a>
+            <a href="https://www.instagram.com/maxx57" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/maxx.thome" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/" target="_blank">Linked in</a>
+            <a href="https://entreprendre.service-public.fr/vosdroits/F31228" target="_blank">Mentions légales</a>
         </div>
         <p>© 2024 Copyright Max Thomé School. Tous droits réservés. <cite>Réalisation MaxURLOR</cite></p>
 
