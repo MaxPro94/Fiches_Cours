@@ -14,11 +14,27 @@ footer p {
     padding: 20px;
     opacity: 40%;
     font-size: 14px;
+    margin: 0;
 }
 
 footer a {
     opacity: 50%;
     color: #FFE8d6;
     text-decoration: none;
-    margin-left: 6%;
+    margin: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    .liens_footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
 }
