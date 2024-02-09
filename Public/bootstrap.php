@@ -34,6 +34,13 @@
         <br>
         <p>Un framework(cadre travail) il va venir encadrer le travail es donner des outils qui vont simplifier et faciliter la production.</p>
         <p>Bootstrap est l'un des framework les plus utiliser mondialement.</p>
+        <br>
+        <h3>Comment fonctionne bootstrap ?</h3>
+        <p>Bootstrap doit se telecharger sur votre page HTML ou PHP soit en telechargeant toute la bibiliothèque soit en mettant un lien CDN Dans votre page html.</p>
+        <p>Ici nous chosirons la methode avec le CDN, ce qui est je trouve le plus simple.</p>
+        <p>Pour ce faire rien de plus simple rendez-vous sur le site offficiel de bootstrap, allez dans la page "documents"</p>
+        <p>Sur cette page vous trouverez le code complet a entrer dans votre page HTML, il contient la bibliothèque CSS et le code JavaSript qui serra utile pour certaines fonctionnalités.</p>
+        <img src="assets/img/bootstrap/include_bootstrap.png" alt="">
     </div>
     <?php require 'assets/footer.php' ?>
 </body>
