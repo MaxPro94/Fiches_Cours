@@ -24,38 +24,7 @@
 </head>
 
 <body>
-    <header class="barre_nav">
-        <img id="Logo" src="assets/img/Barre de naviguation/LogoProjet.png" alt="Logo Classe DEVWEB 1">
-        <a class="bouton_acceuil" href="acceuil.html">
-            <div class="material-symbols-outlined">
-                home
-            </div>Acceuil
-        </a>
-
-        <a class="bouton_cours" href="acceuil.html">
-            <div class="material-symbols-outlined">
-                menu_book
-            </div>Les cours
-        </a>
-
-        <a class="bouton_rappel" href="LesGrosrappels.html">
-            <div class="material-symbols-outlined">
-                priority_high
-            </div>Rappels
-        </a>
-        <a class="bouton_citation" href="index.html">
-            <div class="material-symbols-outlined">
-                comment_bank
-            </div>Citations
-        </a>
-        <a class="bouton_info" href="https://fr.wikipedia.org/wiki/Bataille_de_Patay">
-            <div class="material-symbols-outlined">
-                info
-            </div>Infos
-        </a>
-        <a href="https://www.metz-numeric-school.fr/fr" target="_blank"><img id="LogoMNS"
-                src="assets/img/Barre de naviguation/LogoMNS1.png" alt="Logo Metz Numeric School"></a>
-    </header>
+    <?php require 'assets/header.php' ?>
     <div class="principal">
         <h1>Php c'est quoi ?</h1>
         <br>
@@ -67,7 +36,7 @@
         <br>
         <br>
         <h2>Voici la syntaxe pour écrire du langage PHP :</h2>
-        <img class="slide-fwd-center" src="assets/img/Php/syntaxe_php.png" alt="">
+        <img src="assets/img/Php/syntaxe_php.png" alt="">
         <p>Une foit la balise ouverte nous pouvons tapez tout notre code Php dedans.</p>
         <br>
         <h3>Qu'elle est la meilleure syntaxe ?</h3>
@@ -107,23 +76,36 @@
         <img src="assets/img/Php/structure_controle.png" alt="">
         <p>Ici nous effectuons des contrôles, comme avec python et ses if/elif/else.</p>
         <p>Si "nani" est egal a "nananere" alors faire "nanani + nananere"</p>
-
-
-
-
+        <br>
+        <h3>Exemple de boucle :</h3>
+        <img src="assets/img/Php/exemple-contenu.png" alt="">
+        <h4>Explications :</h4>
+        <img src="assets/img/Php/appel-page-co.png" alt="">
+        <p>Ce code appel un page appelée db-connect.php, c'est cette page qui va nous permettre de ce connecter a la base de données voulu</p>
+        <p>Voici le contenu de la page en question:</p>
+        <img src="assets/img/Php/connect.png" alt="">
+        <br>
+        <br>
+        <p>Nous donnons la valeur comportant la requete SQL souhaiter a une variable $query1 puis nous demandons que la requete $query1 incremente les resultats dans la variable $resultcit</p>
+        <p>$dbh(La base de données) ->(effectue) query($query1)(La fonction(execute la $variable) )</p>
+        <img src="assets/img/Php/requete.png" alt="">
+        <br>
+        <img src="assets/img/Php/boucle&if.png" alt="">
+        <h4>Traduction de la boucle en pseudo-code:</h4>
+        <p>SI $variable obtient plus que 0 ligne alors ouvrir une boucle TantQue</p>
+        <p>$row = $resultcit->fetch(PDO::FETCH_ASSOC): Cette partie est divisée en deux actions.</p>
+        <p>$row = ...: Cette partie affecte le résultat de la méthode fetch() à la variable $row. Ainsi, à chaque itération de la boucle, une nouvelle ligne de résultat est stockée dans cette variable.</p>
+        <p>$resultcit->fetch(PDO::FETCH_ASSOC): C'est une méthode de l'objet $resultcit (qui est probablement le résultat d'une requête SQL exécutée avec PDO) qui récupère la prochaine ligne de résultats de la requête sous forme d'un tableau associatif. La constante PDO::FETCH_ASSOC spécifie que les résultats doivent être récupérés sous forme de tableau associatif, où les clés sont les noms des colonnes de la table.</p>
+        <br>
+        <img src="assets/img/Php/incrementation.png" alt="">
+        <p>Ici nous entrons les resultats obtenues, dans les balises HTML desirées.</p>
+        <p>N'oubliez pas le format, nous allons chercher nos datas dans une db il faut donc appeler les noms des colonnes souhaitées(['content'], ['name']).</p>
+        <a class="liens" href="php-orga.html.php">Comment structurer ses fichiers PHP ?</a>
     </div>
 
     <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
         keyboard_arrow_up
         </span></a>
-    <footer>
-        <div class="liens-footer">
-            <a href="https://www.instagram.com/maxx57" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/maxx.thome" target="_blank">Facebook</a>
-            <a href="https://www.linkedin.com/" target="_blank">Linked in</a>
-            <a href="https://entreprendre.service-public.fr/vosdroits/F31228" target="_blank">Mentions légales</a>
-        </div>
-        <p>© 2024 Copyright Max Thomé School. Tous droits réservés. <cite>Réalisation MaxURLOR</cite></p>
-    </footer>
+<?php require 'assets/footer.php' ?>
 </body>
 </html>

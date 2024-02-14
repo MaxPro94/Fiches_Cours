@@ -17,12 +17,12 @@
                 priority_high
             </div>Rappels
         </a>
-        <a class="bouton_citation" href="index.html">
+        <a class="bouton_citation" href="index.php">
             <div class="material-symbols-outlined">
                 comment_bank
             </div>Citations
         </a>
-        <a class="bouton_info" href="https://fr.wikipedia.org/wiki/Bataille_de_Patay">
+        <a class="bouton_info" href="https://fr.wikipedia.org/wiki/Bataille_de_Patay" target="_blank">
             <div class="material-symbols-outlined">
                 info
             </div>Infos
