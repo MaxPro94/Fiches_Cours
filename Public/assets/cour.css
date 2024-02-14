@@ -221,6 +221,81 @@ h5 {
     transform: scale(1.1);
 }
 
+#acceuil {
+    background: #FFE8d6;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+#acceuil a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 27px;
+}
+
+
+.box {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(45deg,#FFE8d6, #cb997e);
+    padding: 30px;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.box::before, .box::after {
+    position: absolute;
+    font-size: 120px;
+    opacity: .2;
+
+}
+
+.box::before {
+    content: '\201C';
+    top: -20px;
+    left: 5px;
+
+}
+
+.box::after {
+    content: '\201D';
+    bottom: 0;
+    right: 5px;
+}
+
+#acceuil p {
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box h2 {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.box:hover {
+    color: black;
+    box-shadow: 20px 50px 100px rgba(0, 0, 0, .5);
+}
+
+#background {
+    z-index: -1;
+}
+
+#acceuil .box:hover, #acceuil.box:hover {
+    color: #FFE8d6;
+    opacity: 1;
+    background: #a5a58d;
+    background: linear-gradient(45deg, #6b705c 15%, #cb997e);
+}
+
 @media screen and (max-width: 780px) {
     .principal {
         margin-top: 120px;
