@@ -23,38 +23,7 @@
 </head>
 
 <body>
-    <header class="barre_nav">
-        <img id="Logo" src="assets/img/Barre de naviguation/LogoProjet.png" alt="Logo Classe DEVWEB 1">
-        <a class="bouton_acceuil" href="acceuil.html">
-            <div class="material-symbols-outlined">
-                home
-            </div>Acceuil
-        </a>
-
-        <a class="bouton_cours" href="acceuil.html">
-            <div class="material-symbols-outlined">
-                menu_book
-            </div>Les cours
-        </a>
-
-        <a class="bouton_rappel" href="LesGrosrappels.html">
-            <div class="material-symbols-outlined">
-                priority_high
-            </div>Rappels
-        </a>
-        <a class="bouton_citation" href="index.html">
-            <div class="material-symbols-outlined">
-                comment_bank
-            </div>Citations
-        </a>
-        <a class="bouton_info" href="https://fr.wikipedia.org/wiki/Bataille_de_Patay">
-            <div class="material-symbols-outlined">
-                info
-            </div>Infos
-        </a>
-        <a href="https://www.metz-numeric-school.fr/fr" target="_blank"><img id="LogoMNS"
-                src="assets/img/Barre de naviguation/LogoMNS1.png" alt="Logo Metz Numeric School"></a>
-    </header>
+<?php require 'assets/header.php' ?>
     <div class="principal">
         <h1>W.A.M.P</h1>
         <h2>W : Windows / A : Apache / M : MySQL / P : Php</h2>
@@ -139,16 +108,7 @@
     <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
         keyboard_arrow_up
         </span></a>
-    <footer>
-        <div class="liens-footer">
-            <a href="https://www.instagram.com/maxx57" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/maxx.thome" target="_blank">Facebook</a>
-            <a href="https://www.linkedin.com/" target="_blank">Linked in</a>
-            <a href="https://entreprendre.service-public.fr/vosdroits/F31228" target="_blank">Mentions légales</a>
-        </div>
-        <p>© 2024 Copyright Max Thomé School. Tous droits réservés. <cite>Réalisation MaxURLOR</cite></p>
-
-    </footer>
+<?php require 'assets/footer.php' ?>
 
 </body>
 
