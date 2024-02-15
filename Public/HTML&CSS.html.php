@@ -24,7 +24,7 @@
 
 
 <body>
-<?php require 'assets/header.php' ?>
+<?php require 'assets/templates/header.php' ?>
     <div class="principal">
         <h1>HTML & CSS</h1>
         <br>
@@ -180,7 +180,7 @@
     <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
         keyboard_arrow_up
         </span></a>
-<?php require 'assets/footer.php' ?>
+<?php require 'assets/templates/footer.php' ?>
 </body>
 
 </html>

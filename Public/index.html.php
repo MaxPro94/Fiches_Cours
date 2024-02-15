@@ -21,7 +21,7 @@
 require 'assets/data/db-connect.php'; ?>
 
 <body>
-    <?php require 'assets/header.php' ?>
+    <?php require 'assets/templates/header.php' ?>
     <div id="acceuil" class="container">
 
 

@@ -13,7 +13,7 @@ body {
 header.barre_nav {
     background: linear-gradient(#b7b7a4,#6b705c);
     border-bottom: 2px solid #fefefe;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
 }
 
 #LogoMNS {
@@ -43,7 +43,7 @@ header.barre_nav {
     border: 1px solid #fefefe;
     border-radius: 15px 5px 15px 5px;
     background-color: #FFE8d6;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     color: #6b705c;
     font-size: 1.2rem;
     font-weight: 900;
@@ -128,7 +128,7 @@ header.barre_nav {
     font-size: 20px;
     text-align: center;
     text-decoration: underline;
-    border-radius: 20px 20px 20px 0px;
+    border-radius: 20px 20px 20px 0;
     margin-left: 520px;
     margin-right: 520px;
 }
@@ -296,6 +296,7 @@ h5 {
     background: linear-gradient(45deg, #6b705c 15%, #cb997e);
 }
 
+
 @media screen and (max-width: 780px) {
     .principal {
         margin-top: 120px;
@@ -424,6 +425,7 @@ h5 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 540px) {
+
     header .barre_nav {
         display: none;
     }

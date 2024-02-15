@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php require 'assets/header.php' ?>
+    <?php require 'assets/templates/header.php' ?>
 
     <div class="liste">
         <video autoplay loop muted poster="polina.jpg" id="bgvid">
@@ -50,7 +50,7 @@
     <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
             keyboard_arrow_up
         </span></a>
-    <?php require 'assets/footer.php' ?>
+    <?php require 'assets/templates/footer.php' ?>
 </body>
 
 </html>
