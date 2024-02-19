@@ -24,7 +24,7 @@
 
 
 <body>
-<?php require 'assets/header.php' ?>
+<?php require 'assets/templates/header.php' ?>
     <div class="principal">
         <h1>Quelle est l'utilité de GIT-BASH</h1>
         <p>Ici nous allons voir les commandes les plus utiles sur GIT-BASH</p>
@@ -194,7 +194,7 @@
     <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
         keyboard_arrow_up
         </span></a>
-<?php require 'assets/footer.php' ?>
+<?php require 'assets/templates/footer.php' ?>
 </body>
 
 </html>

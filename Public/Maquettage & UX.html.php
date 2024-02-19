@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <?php require 'assets/header.php' ?>
+    <?php require 'assets/templates/header.php' ?>
     <div class="principal">
         <h1>A quoi sert le maquettage ?</h1>
         <p>Le maquettage est une étape importante dans la creation d'un site Web. Elle permet de definir une charte
@@ -84,7 +84,7 @@
     <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
         keyboard_arrow_up
         </span></a>
-<?php require 'assets/footer.php' ?>
+<?php require 'assets/templates/footer.php' ?>
 
 
 </body>

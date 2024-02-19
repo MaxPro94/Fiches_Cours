@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <?php require 'assets/header.php' ?>
+    <?php require 'assets/templates/header.php' ?>
 
     <div class="liste">
         <video autoplay loop muted poster="polina.jpg" id="bgvid">
@@ -40,6 +40,7 @@
                 <li><span>10</span><a class="liens_cours" href="Looping.html">Looping</a></li>
                 <li><span>11</span><a class="liens_cours" href="Python.html">Python</a></li>
                 <li><span>12</span><a class="liens_cours" href="php.html">PHP</a></li>
+                <li><span>12</span><a class="liens_cours" href="javascript.html.php">JavaScript</a></li>
                 <li><span>13</span><a class="liens_cours" href="bootstrap.php">Bootstrap</a></li>
                 <li><span>*</span><a class="liens_cours" href="LesGrosrappels.html">Rappels/Révisions</a></li>
             </ul>
@@ -50,7 +51,7 @@
     <a id="ancre" href="#Logo"><span class="material-symbols-outlined">
             keyboard_arrow_up
         </span></a>
-    <?php require 'assets/footer.php' ?>
+    <?php require 'assets/templates/footer.php' ?>
 </body>
 
 </html>

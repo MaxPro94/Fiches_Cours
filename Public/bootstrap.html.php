@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <?php require 'assets/header.php' ?>
+    <?php require 'assets/templates/header.php' ?>
     <div class="principal">
         <h1>Bootstrap</h1>
         <br>
@@ -42,6 +42,6 @@
         <p>Sur cette page vous trouverez le code complet a entrer dans votre page HTML, il contient la bibliothèque CSS et le code JavaSript qui serra utile pour certaines fonctionnalités.</p>
         <img src="assets/img/bootstrap/include_bootstrap.png" alt="">
     </div>
-    <?php require 'assets/footer.php' ?>
+    <?php require 'assets/templates/footer.php' ?>
 </body>
 </html>

@@ -51,7 +51,7 @@ header.barre_nav {
     border: 1px solid #fefefe;
     border-radius: 15px 5px 15px 5px;
     background-color: #FFE8d6;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     color: #6b705c;
     font-size: 1.2rem;
     font-weight: 900;
@@ -152,7 +152,7 @@ a.bouton_acceuil {
 }
 
 .box ul li:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
     z-index: 100;
     background: #ddbea9;
     box-shadow: 0 5px 25px rgba(0, 0, 0, .5);

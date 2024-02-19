@@ -1,4 +1,4 @@
-1-
+1- Revoir le responsive pour la page d'acceuil ou remettre en index comme elle l'etait avant.
 2-
 3-
 ***- Peaufiner le style du site

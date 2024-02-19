@@ -1,7 +1,7 @@
 footer {
     background: linear-gradient(#6b705c, #4b4e3f);
     border-top: 2px solid #fefefe;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0 0;
     color: #FFE8d6;
     text-align: center;
 }
