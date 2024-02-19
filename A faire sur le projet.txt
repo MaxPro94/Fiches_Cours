@@ -1,5 +1,5 @@
-1- Revoir le responsive pour la page d'acceuil ou remettre en index comme elle l'etait avant.
-2-
+1- Supprimer la bouton citations a dans la barre de naviguation.
+2- Revoir le responsive pour la page d'acceuil ou remettre en index comme elle l'etait avant.
 3-
 ***- Peaufiner le style du site
 ***- Bien relire les cours ( fautes etc.. )
