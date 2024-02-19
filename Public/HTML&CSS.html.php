@@ -40,6 +40,23 @@
         </p>
         <p>HTML fournit la structure de base d'une page web en indiquant comment le contenu doit être organisé.</p>
         <br>
+        <p>En HTML il existe deux types de balises, les balises block et les balises inline.</p>
+        <ul>
+            <h4>Balises block (éléments de type bloc) :</h4>
+            <li>Les balises block occupent tout l'espace horizontal disponible sur la ligne où elles se trouvent, ce qui signifie qu'elles commencent sur une nouvelle ligne et s'étendent sur toute la largeur disponible jusqu'à ce qu'elles rencontrent un autre élément de type bloc.</li>
+            <li>Par défaut, les balises block commencent sur une nouvelle ligne et poussent les éléments qui les précèdent et qui les suivent vers le haut et vers le bas, respectivement.</li>
+            <li>Exemples de balises block : div, p, h1 à h6, ul, ol, li, table, form, etc.</li>
+            <li>J'aime voir ca comme des balises de mises en fome du DOM</li>
+        </ul>
+        <br>
+        <ul>
+            <h4>Balises inline (éléments de type en ligne) :</h4>
+            <li>Les balises inline ne commencent pas sur une nouvelle ligne et occupent uniquement la quantité d'espace nécessaire pour afficher leur contenu.</li>
+            <li>Les balises inline ne provoquent pas de rupture de ligne et permettent aux éléments qui les précèdent et qui les suivent de rester sur la même ligne.</li>
+            <li>Exemples de balises inline : span, a, strong, em, img, input, button, etc.</li>
+            <li>J'aime voir ca comme des balises de mises de style</li>
+        </ul>
+        <br>
         <h2>CSS (Cascading Style Sheets) :</h2>
         <br>
         <img id="zom" src="assets/img/Cour HTML & CSS/Exemple code CSS.png" alt="Code CSS">
